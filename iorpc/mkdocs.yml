@@ -1,0 +1,21 @@
+site_name: ioRPC
+site_description: 'Project documentation'
+site_author: 'Donovan Solms'
+site_url: 'https://docs.projectlimitless.io/ioRPC'
+
+# Repository
+repo_name: 'GitHub'
+repo_url: 'https://github.com/ProjectLimitless/ioRPC'
+
+# Copyright
+copyright: 'Copyright &copy; Donovan Solms'
+
+
+theme: 'material'
+extra:
+  palette:
+    primary: 'blue grey'
+    accent: 'blue'
+  author:
+    github: 'ProjectLimitless'
+    twitter: 'prjlimitless'
