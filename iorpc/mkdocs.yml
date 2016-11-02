@@ -10,12 +10,21 @@ repo_url: 'https://github.com/ProjectLimitless/ioRPC'
 # Copyright
 copyright: 'Copyright &copy; Donovan Solms'
 
-
+theme_dir: '../_theme/material'
 theme: 'material'
 extra:
-  palette:
-    primary: 'blue grey'
-    accent: 'blue'
+  logo: images/limitless_small.jpg
   author:
     github: 'ProjectLimitless'
     twitter: 'prjlimitless'
+
+markdown_extensions:
+  - codehilite(css_class=code)
+  - admonition
+  - toc:
+      permalink: '#'
+
+# Page tree
+pages:
+  - Overview: index.md
+  - Getting Started: getting-started.md

@@ -43,6 +43,10 @@ extra:
   author:
     github: squidfunk
     twitter: squidfunk
+#  palette:
+#    primary: 'cool'
+#    accent: 'red'
+
 
 # Extensions
 markdown_extensions:

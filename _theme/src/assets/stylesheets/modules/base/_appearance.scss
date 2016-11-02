@@ -63,11 +63,11 @@ hr {
  * Backdrop
  */
 .backdrop {
-  background: $white;
+  background: $color-background-lite;
 
   /* [tablet landscape+]: Introduce paper with shadow */
   @include break-from-device(tablet landscape) {
-    background: darken($white, 5%);
+    background: $color-background-lite;
   }
 }
 
@@ -75,7 +75,7 @@ hr {
  * Backdrop paper with shadow
  */
 .backdrop-paper:after {
-  background: $white;
+  background: $color-background-lite;
 
   /* [tablet landscape+]: Add drop shadow */
   @include break-from-device(tablet landscape) {
@@ -105,8 +105,8 @@ hr {
 .header {
   @include drop-shadow(1);
 
-  background: $primary;
-  color: $white;
+  background: $color-background-lite;
+  color: $color-text;
 
   /*
    * Add status bar overlay for iOS web application

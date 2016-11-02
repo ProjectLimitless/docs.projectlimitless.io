@@ -24,6 +24,10 @@
  * Drawer appearance
  * ------------------------------------------------------------------------- */
 
+.banner {
+    background-color: $color-background-lite;
+    color: $color-text;
+}
 /*
  * Drawer container
  */
@@ -31,26 +35,27 @@
 
   /* [tablet landscape-]: Light gray background */
   @include break-to-device(tablet landscape) {
-    background: $white;
+    background: $color-background;
+    color: $color-text;
   }
 
   /*
    * Color links
    */
   .toc a {
-
+      color: $color-text;
     /*
      * Current active element
      */
     &.current {
-      color: $primary;
+      color: $color-link;
     }
 
     /*
      * Hovered link
      */
     &:hover, &:focus {
-      color: $primary;
+      color: $color-link;
     }
   }
 
@@ -58,14 +63,14 @@
    * Color anchors menu
    */
   .anchor a {
-    border-left: 2px solid $primary;
+    border-left: 2px solid $color-link;
   }
 
   /*
    * Main sections
    */
   .section {
-    color: $black-light;
+    color: $color-background-lite;
   }
 }
 

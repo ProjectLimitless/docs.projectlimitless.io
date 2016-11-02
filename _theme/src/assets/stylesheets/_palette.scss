@@ -27,8 +27,25 @@
 /*
  * Primary and accent color
  */
-$primary: $red-400   !default;
-$accent:  $teal-a700 !default;
+//$primary: $red-400   !default;
+//$accent:  $teal-a700 !default;
+
+// Limitless colours
+$color-text:                #cbcacc;
+$color-heading:             #34dab1;
+$color-green-highlight:     #00db72;
+
+$color-background:          #17181c;
+$color-background-lite: 	#292c2f;
+
+$color-link:                #fb9d00;
+$color-button-border:		#fb9d00;
+$color-button-background:	#19160e;
+
+
+
+$primary: $color-text   !default;
+$accent:  $color-green-highlight   !default;
 
 /*
  * Black opacities

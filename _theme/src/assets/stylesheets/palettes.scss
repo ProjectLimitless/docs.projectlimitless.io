@@ -79,7 +79,7 @@
      * Application header and footer
      */
     .header, .footer {
-      background: $color;
+      background: $color-background;
     }
 
     /*
@@ -96,7 +96,7 @@
          * Current active element
          */
         &.current {
-          color: $color;
+          color: $color-link;
         }
 
         /*

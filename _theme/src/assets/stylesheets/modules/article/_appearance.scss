@@ -29,6 +29,8 @@
  */
 .article {
 
+    background-color: $white;
+    color: #5F5F5F;
   /*
    * Differing top and bottom rubberband backgrounds in iOS web application
    */
@@ -38,6 +40,7 @@
 
     /* Hack [iOS]: Mitigate black bounding box with linear gradient */
     .wrapper {
+
       background: linear-gradient(
         to bottom, $white 50%, $white 50%);
     }
@@ -47,7 +50,7 @@
    * Headlines, chapters, links and inline code
    */
   h1, h2, a {
-    color: $primary;
+    color: #17181C;
   }
 
   /*
@@ -135,8 +138,8 @@
  * Article footer
  */
 .footer {
-  background: $primary;
-  color: $white;
+  background: $color-background;
+  color: $color-green-highlight;
 
   /*
    * Remove bottom border on links
@@ -162,7 +165,7 @@
    * Inherit color for links
    */
   a .title, a .button {
-    color: $white;
+    color: $color-green-highlight;
   }
 
   /*

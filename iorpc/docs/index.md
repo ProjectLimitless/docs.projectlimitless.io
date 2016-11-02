@@ -1,17 +1,20 @@
-# Welcome to MkDocs
+# Welcome to the ioRPC Documentation
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+The project documentation for ioRPC is part of the complete Project Limitless
+documentation site. In the documentation you will find Getting Started guides,
+tutorials and code overview for sections of interest.
 
-## Commands
+## Contributing
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+If you find any errors or would like to improve the documentation, feel free
+to open a pull request against the [Documentation GitHub Repo](https://www.github.com/ProjectLimitless/docs.projectlimitless.io)
 
-## Project layout
+## First Time Users
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+See the [Getting Started](/getting-started) guide.
+
+## Essentials
+
+* [NuGet](https://www.nuget.org/packages/Limitless.ioRPC/)
+* [Project Build Status](https://www.projectlimitless.io/badger/iorpc)
+* [Project Limitless Documentation](https://docs.projectlimitless.io)
