@@ -43,7 +43,7 @@ proper XML structure.
 
 This is part of the open-source Project Limitless documentation covering
 everything developed for Project Limitless. In this documentation you will find
-a Getting Started guide showing you how to use ioRPC in your own project in less
+a [Getting Started](/getting-started) guide showing you how to use ioRPC in your own project in less
 than 10 minutes.
 
 ## Contributing

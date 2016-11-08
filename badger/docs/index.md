@@ -10,21 +10,22 @@ single badge with templating.
 Some projects are built for different platforms using different continuous
 integration tools, each of them have their own build status badges that look
 different. This tool creates a URL to embed that generates a single status using
-each platform you specify.
+each platform you specify using a template you specify.
 
 Project Limitless aims to be fully cross-platform and thus the build status for
-each platform should be displayed
-
-## When to use Badger
+each platform should be displayed.
 
 ## How Badger Works
+
+On each request to the badge or status page, badger makes calls to the specified
+services to retrieve the statuses and renders the result.
 
 ## About the Documentation
 
 This is part of the open-source Project Limitless documentation covering
 everything developed for Project Limitless. In this documentation you will find
-a Getting Started guide showing you how to use Badger for your own project in less
-than 10 minutes.
+a [Getting Started](/getting-started) guide showing you how to use Badger for
+your own project in less than 10 minutes.
 
 ## Contributing
 
