@@ -1,0 +1,30 @@
+site_name: Unattended
+site_description: 'Project documentation'
+site_author: 'Donovan Solms'
+site_url: 'https://docs.projectlimitless.io/Unattended'
+
+# Repository
+repo_name: 'GitHub'
+repo_url: 'https://github.com/ProjectLimitless/Unattended'
+
+# Copyright
+copyright: 'Copyright &copy; Donovan Solms'
+
+theme_dir: '../_theme/material'
+theme: 'material'
+extra:
+  logo: images/limitless-logo.png
+  author:
+    github: 'ProjectLimitless'
+    twitter: 'prjlimitless'
+
+markdown_extensions:
+  - codehilite(css_class=code)
+  - admonition
+  - toc:
+      permalink: '#'
+
+# Page tree
+pages:
+  - Overview: index.md
+  - Getting Started: getting-started.md
