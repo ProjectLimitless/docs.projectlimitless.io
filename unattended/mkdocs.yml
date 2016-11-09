@@ -28,3 +28,4 @@ markdown_extensions:
 pages:
   - Overview: index.md
   - Getting Started: getting-started.md
+  - Configuration: configuration.md

@@ -41,7 +41,7 @@ proper XML structure.
 
 ## About the Documentation
 
-This is part of the open-source Project Limitless documentation covering
+This is part of the open source Project Limitless documentation covering
 everything developed for Project Limitless. In this documentation you will find
 a [Getting Started](/getting-started) guide showing you how to use ioRPC in your own project in less
 than 10 minutes.
@@ -49,7 +49,7 @@ than 10 minutes.
 ## Contributing
 
 If you find any errors or would like to improve the documentation, feel free
-to open a pull request against the [Documentation GitHub Repo for ioRPC](https://www.github.com/ProjectLimitless/docs.projectlimitless.io)
+to open a pull request against the [Project Limitless Documentation GitHub Repository](https://www.github.com/ProjectLimitless/docs.projectlimitless.io).
 
 ## First Time Users
 
