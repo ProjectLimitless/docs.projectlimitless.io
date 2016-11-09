@@ -26,10 +26,11 @@ The statuses section defines the integration statuses to fetch from the specifie
 `Url`s. You can specify as many statuses as you want. The `Url` should point to
 the API page which usually contains JSON or XML.
 
-Currently, only `AppVeyor` and `TravisCI` providers are available as well as only
-the `Build` type. Feel free to
-[open a pull request](https://github.com/ProjectLimitless/Badger/pulls) if you
-would like to see your favourite tool included.
+!!! note
+    Currently, only 'AppVeyor' and 'TravisCI' providers are available as well as
+    only the 'Build' type. Feel free to
+    [create a new issue](https://github.com/ProjectLimitless/Badger/issues) if you
+    would like to see your favourite tool included.
 
 ## Badge
 
@@ -66,10 +67,7 @@ The overlays specify where `Template.Badges.Passing`, `Template.Badges.Failing`
 and `Template.Badges.Unknown` should be positioned on top of `Template.Background`
 for the given provider.
 
-`Provider` must match those specified in [Statuses](/project-file-format/#statuses)
-and currently only supports `AppVeyor` and `TravisCI`. Feel free to
-[open a pull request](https://github.com/ProjectLimitless/Badger/pulls) if you
-would like to see your favourite tool included.
+`Provider` must match those specified in [Statuses](/project-file-format/#statuses).
 
 ## Page
 
