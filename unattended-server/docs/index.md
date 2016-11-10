@@ -2,13 +2,19 @@
 
 ## What is the Unattended Server
 
+A simple PHP, Yii-based server for
+[Unattended](https://www.github.com/ProjectLimitless/Unattended) updates.
 
 ## Why Unattended Server
 
+Simply because I needed a way to get updates to
+[Unattended](https://www.github.com/ProjectLimitless/Unattended) quickly and
+easily.
+
 ## When to use Unattended Server
 
-## How the Unattended Server Works
-
+Whenever you use [Unattended](https://www.github.com/ProjectLimitless/Unattended).
+They are meant to work together.
 
 ## About the Documentation
 
