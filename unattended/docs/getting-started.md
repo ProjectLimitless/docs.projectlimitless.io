@@ -3,6 +3,11 @@
 *Tutorial length: ~30 minutes*
 
 !!! Warning
+    You must first set up an Unattended Server. Without one, you won't be able
+    to check and apply updates. Follow the
+    [Unattended Server Getting Started Guide now](https://docs.projectlimitless.io/unattended-server).
+
+!!! Note
     No binary builds are currently available for Unattended, but compiling is
     very simple, all you need is C# with NuGet available.
 
