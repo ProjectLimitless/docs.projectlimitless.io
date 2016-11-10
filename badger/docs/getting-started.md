@@ -2,7 +2,7 @@
 
 *Tutorial length: ~10 minutes*
 
-!!! Warning
+!!! Note
     There are currently no binary builds available for Badger, but fear not,
     building is a single command when you have [Go](https://golang.org) installed.
 
