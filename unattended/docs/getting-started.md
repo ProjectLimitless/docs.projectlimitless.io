@@ -7,6 +7,12 @@
     to check and apply updates. Follow the
     [Unattended Server Getting Started Guide now](https://docs.projectlimitless.io/unattended-server).
 
+!!! Server
+    This guide assumes the [Unattended Server](https://github.com/ProjectLimitless/UnattendedServer)
+    is running at [http://unattendedserver.local](http://unattendedserver.local).
+    If your server is running at a different location, ensure you change it in
+    the sample manifest at **sample-files/sample.uum** as well.
+
 !!! Note
     No binary builds are currently available for Unattended, but compiling is
     very simple, all you need is C# with NuGet available.
@@ -49,7 +55,7 @@ should be taken care of by the application installer.
 
 ## Output
 
-```sh
+```text
 2016-11-09 23:16:20|INFO|Limitless.Unattended.Unattended.setup|Update strategy set as 'prompt'
 2016-11-09 23:16:20|INFO|Limitless.Unattended.Unattended.setup|Update interval set as 'daily'
 2016-11-09 23:16:22|INFO|Limitless.Unattended.Unattended.GetAvailableUpdates|Checking for updates...
@@ -89,5 +95,5 @@ restarted running the new `1.0.0.1` version.
 ## Conclusion
 
 You now have a sample application running that can update itself whenever a new
-update is available. Use the sections on the left to learn more about the
-configuration of an update manifest and the Unattended daemon process.
+update is available. Learn more [about update manifests](/update-manifests) or
+[configuring the daemon process](/configuration).

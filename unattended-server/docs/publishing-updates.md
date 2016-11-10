@@ -29,7 +29,7 @@ available.
 
 This is a unique ID for your application / module / package. This ID is the same
 ID you must use when
-[configuring Unattended manifests](https://docs.projectlimitless.io/unattended/update-manifest).
+[configuring Unattended manifests](https://docs.projectlimitless.io/unattended/update-manifests#appid).
 
 ### SHA256 Hash
 
