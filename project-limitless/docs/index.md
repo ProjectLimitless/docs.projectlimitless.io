@@ -17,5 +17,5 @@ to open a pull request against the [Project Limitless Documentation GitHub Repos
 
 ## Essentials
 
-* [Project Build Statuses](https://www.projectlimitless.io/badger)
+* [All Project Build Statuses](https://www.projectlimitless.io/badger)
 * [Project Limitless Documentation](https://docs.projectlimitless.io)
