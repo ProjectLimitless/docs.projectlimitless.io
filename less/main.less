@@ -1,0 +1,142 @@
+// out: ../css/main.css, sourcemap: false, compress: true
+/*
+    Core Stylesheet for documentation index
+*/
+
+// Responsive media queries
+@desktop: ~"only screen and (min-width: 940px)"; /* tablet, landscape iPad, lo-res laptops ands desktops */
+@tablet: ~"only screen and (min-width: 640px) and (max-width: 939px)"; /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@medium: ~"only screen and (min-width: 480px) and (max-width: 639px)"; /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@phone: ~"only screen and (min-width: 350px) and (max-width: 479px)"; /* smartphones, iPhone, portrait 480x320 phones */
+@mini: ~"only screen and (max-width: 349px)"; /* Bloody tiny */
+
+/* Used like this
+
+@media @desktop {
+    background-color: green;
+}
+
+@media @tablet {
+    background-color: red;
+}
+
+@media @medium {
+    background-color: blue;
+}
+
+@media @phone {
+    background-color: purple;
+}
+
+@media @mini {
+    background-color: purple;
+}
+*/
+
+
+@import "reset.less";
+@import "elements.less";
+
+/* Colours */
+
+@color-green: #00DB72;
+@color-green-very-dark: #003A20;
+@color-green-black: #082418;
+@color-turq: #34DAB1;
+@color-turq-dark: #1d2422;
+@color-blue: #278CDC;
+@color-blue-very-dark: #325570;
+@color-red: #F42A2A;
+@color-yellow: #F0CB00;
+@color-orange: #FB9D00;
+@color-purple: #A300E3;
+@color-pink: #FF0058;
+@color-white-off: #CBCACC;
+@color-white-dark: #5F5F5F;
+@color-grey-dark: #17181C;
+@color-grey-purple: #24232B;
+@color-grey-modern: #292c2f;
+
+@color-text: @color-white-off;
+
+/* Fonts */
+@font-main: 'Raleway', sans-serif;
+
+html {
+    color: @color-white-off;
+	font-family: @font-main;
+	background-color: @color-grey-dark;
+}
+
+div.holder {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 950px;
+    padding: 20px;
+
+    div.heading {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        max-width: 200px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+
+div.logo {
+	width: 371px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+
+	img {
+		width: 100%;
+		max-width: 371px;
+		max-height: 254px;
+	}
+
+	@media @phone {
+		width: 95%;
+	}
+	@media @mini {
+		width: 90%;
+	}
+}
+
+div.project-list {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    div.project {
+        padding: 10px;
+        border-bottom: 1px solid @color-grey-purple;
+
+        div.title {
+            //color: @color-blue;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    }
+
+    div.actions {
+        text-align: right;
+        padding: 10px;
+        a {
+            color: @color-turq;
+            text-decoration: none;
+            padding: 5px;
+            .transition();
+            .opacity(0.7);
+
+            &:hover {
+                .transition();
+                .opacity(1.0);
+            }
+        }
+    }
+}
