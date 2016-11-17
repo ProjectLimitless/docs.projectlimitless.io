@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   /* Initialize index */
   var initialize = function() {
-    pegasus(base_url + '/mkdocs/search_index.json').then(
+    pegasus('/mkdocs/search_index.json').then(
 
       /* Request successful, we got the index */
       function(data, xhr) {
@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', function() {
         /* Index articles */
         var articles = {};
         data.docs.map(function(article) {
-          article.location = base_url + article.location;
+          article.location = article.location;
           articles[article.location] = article;
           index.add(article);
         });

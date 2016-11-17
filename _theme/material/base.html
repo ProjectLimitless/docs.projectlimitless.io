@@ -5,16 +5,9 @@
 <!--[if IE 9 ]>    <html class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
-
-    <!-- Charset and viewport -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,
-      user-scalable=no, initial-scale=1, maximum-scale=1" />
-
-    <!-- General meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     {% block htmltitle %}
-
-      <!-- Site title -->
       {% if page_title %}
         <title>{{ page_title }} - {{ site_name }}</title>
       {% elif page_description %}
@@ -22,49 +15,28 @@
       {% else %}
         <title>{{ site_name }}</title>
       {% endif %}
-
-      <!-- Site description -->
       {% if page_description %}
-        <meta name="description" content="{{ page_description }}" />
+        <meta name="description" content="{{ page_description }}">
       {% endif %}
-
-      <!-- Canonical -->
       {% if canonical_url %}
-        <link rel="canonical" href="{{ canonical_url }}" />
+        <link rel="canonical" href="{{ canonical_url }}">
       {% endif %}
-
-      <!-- Author -->
       {% if site_author %}
-        <meta name="author" content="{{ site_author }}" />
+        <meta name="author" content="{{ site_author }}">
       {% endif %}
     {% endblock %}
-
-    <!-- Open graph tags -->
-    <meta property="og:url" content="{{ canonical_url }}" />
-    <meta property="og:title" content="{{ site_name }}"/>
-    <meta property="og:image"
-      content="{{ canonical_url }}/{{ base_url }}/{{ config.extra.logo }}" />
-
-    <!-- Web application capability on iOS -->
-    <meta name="apple-mobile-web-app-title" content="{{ site_name }}" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent" />
-
-    <!-- Web application icon on iOS -->
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:title" content="{{ site_name }}">
+    <meta property="og:image" content="{{ canonical_url }}/{{ base_url }}/{{ config.extra.logo }}">
+    <meta name="apple-mobile-web-app-title" content="{{ site_name }}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     {% if config.extra.logo %}
-      <link rel="apple-touch-icon"
-        href="{{ base_url }}/{{ config.extra.logo }}">
+      <link rel="apple-touch-icon" href="{{ base_url }}/{{ config.extra.logo }}">
     {% endif %}
-
-    <!-- Favicon -->
     {% set favicon = favicon | default("assets/images/favicon.ico", true) %}
-    <link rel="shortcut icon" type="image/x-icon"
-      href="{{ base_url }}/{{ favicon }}" />
-    <link rel="icon" type="image/x-icon"
-      href="{{ base_url }}/{{ favicon }}" />
-
-    <!-- Configure icons (placed here to omit issues with subdirectories) -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ base_url }}/{{ favicon }}">
+    <link rel="icon" type="image/x-icon" href="{{ base_url }}/{{ favicon }}">
     <style>
       @font-face {
       	font-family: 'Icon';
@@ -81,24 +53,15 @@
       	font-style: normal;
       }
     </style>
-
-    <!-- Theme-related stylesheets -->
-    <link rel="stylesheet" type="text/css"
-      href="{{ project_url }}/assets/stylesheets/application.css" />
-
-    <!-- Extra palettes -->
+    <link rel="stylesheet" href="{{ project_url }}/assets/stylesheets/application.css">
     {% if config.extra.palette %}
-      <link rel="stylesheet" type="text/css"
-        href="{{ project_url }}/assets/stylesheets/palettes.css" />
+      <link rel="stylesheet" href="{{ project_url }}/assets/stylesheets/palettes.css">
     {% endif %}
-
-    <!-- Configure webfonts -->
     {% if config.extra.font != "none" %}
       {% set text = config.extra.get("font", {}).text | default("Ubuntu") %}
       {% set code = config.extra.get("font", {}).code | default("Ubuntu Mono") %}
       {% set font = text + ':400,700|' + code | replace(' ', '+') %}
-      <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css?family={{ font }}" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={{ font }}">
       <style>
         body, input {
           font-family: '{{ text }}', Helvetica, Arial, sans-serif;
@@ -108,86 +71,42 @@
         }
       </style>
     {% endif %}
-
-    <!-- Custom stylesheets -->
     {% for path in extra_css %}
-      <link rel="stylesheet" type="text/css" href="{{ path }}" />
+      <link rel="stylesheet" href="{{ path }}">
     {% endfor %}
-
-    <!-- Modernizr -->
     <script src="{{ project_url }}/assets/javascripts/modernizr.js"></script>
-
-    <!-- Custom header -->
     {% block extrahead %}{% endblock %}
   </head>
-
-  <!-- Define palette -->
   {% set palette = config.extra.get("palette", {}) %}
   {% set primary = palette.primary | replace(' ', '-') | lower %}
   {% set accent  = palette.accent  | replace(' ', '-') | lower %}
-  <body class="
-    {% if primary %}palette-primary-{{ primary }}{% endif %}
-    {% if accent %}palette-accent-{{ accent }}{% endif %}
-  ">
-
-    <!--
-      Sadly the jinja template engine is not very flexible - it doesn't support
-      regular expressions out-of-the-box. Since there might be a slash at the
-      end of the repository name, we just do a string comparison and kill it.
-    -->
+  <body class="{% if primary %}palette-primary-{{ primary }}{% endif %} {% if accent %}palette-accent-{{ accent }}{% endif %}">
     {% if repo_name == "GitHub" and repo_url %}
       {% set repo_id = repo_url | replace("https://github.com/", "") %}
       {% if repo_id[-1:] == "/" %}
         {% set repo_id = repo_id[:-1] %}
       {% endif %}
     {% endif %}
-
-    <!-- Backdrop -->
     <div class="backdrop">
       <div class="backdrop-paper"></div>
     </div>
-
-    <!-- State toggles -->
-    <input class="toggle" type="checkbox" id="toggle-drawer" />
-    <input class="toggle" type="checkbox" id="toggle-search" />
-
-    <!-- Overlay for expanded drawer -->
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
     <label class="toggle-button overlay" for="toggle-drawer"></label>
-
-    <!-- Header -->
     <header class="header">
       {% include "header.html" %}
     </header>
-
-    <!-- Main content -->
     <main class="main">
-
-      <!--
-        This is a nasty hack that checks whether the content contains a
-        h1 headline. If it does, the variable h1 is set to true. This is
-        necessary for correctly rendering the table of contents which is
-        embedded into the navigation and the actual headline.
-      -->
       {% set h1 = "\x3ch1 id=" in content %}
-
-      <!-- Drawer with navigation -->
       <div class="drawer">
         {% include "drawer.html" %}
       </div>
-
-      <!-- Article -->
       <article class="article">
         <div class="wrapper">
-
-          <!-- Headline -->
           {% if not h1 %}
             <h1>{{ page_title | default(site_name, true)}}</h1>
           {% endif %}
-
-          <!-- Article content -->
           {{ content }}
-
-          <!-- Copyright and theme information -->
           <aside class="copyright" role="note">
             {% if copyright %}
               {{ copyright }} &ndash;
@@ -195,14 +114,11 @@
             Documentation built with
             <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
             using the
-            <a href="http://squidfunk.github.io/mkdocs-material/"
-              target="_blank">
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
               Material
             </a>
             theme.
           </aside>
-
-          <!-- Footer -->
           {% block footer %}
             <footer class="footer">
               {% include "footer.html" %}
@@ -210,8 +126,6 @@
           {% endblock %}
         </div>
       </article>
-
-      <!-- Search results -->
       <div class="results" role="status" aria-live="polite">
         <div class="scrollable">
           <div class="wrapper">
@@ -221,8 +135,6 @@
         </div>
       </div>
     </main>
-
-    <!-- Theme-related and custom javascripts -->
     <script>
       var base_url = '{{ base_url }}';
       var repo_id  = '{{ repo_id }}';
@@ -231,8 +143,6 @@
     {% for path in extra_javascript %}
       <script src="{{ path }}"></script>
     {% endfor %}
-
-    <!-- Google Analytics -->
     {% if google_analytics %}
       <script>
         (function(i,s,o,g,r,a,m){
@@ -242,12 +152,10 @@
           m.parentNode.insertBefore(a,m)
         })(window, document,
           'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
         /* General initialization */
         ga('create', '{{ google_analytics[0] }}', '{{ google_analytics[1] }}');
         ga('set', 'anonymizeIp', true);
         ga('send', 'pageview');
-
         /* Track outbound links */
         var buttons = document.querySelectorAll('a');
         Array.prototype.map.call(buttons, function(item) {
@@ -258,7 +166,6 @@
             });
           }
         });
-
         /* Register handler to log search on blur */
         var query = document.querySelector('.query');
         query.addEventListener('blur', function() {
