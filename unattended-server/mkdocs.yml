@@ -10,6 +10,7 @@ repo_url: 'https://github.com/ProjectLimitless/UnattendedServer'
 
 # Copyright
 copyright: 'Copyright &copy; Donovan Solms'
+google_analytics: ['UA-26768009-4', 'docs.projectlimitless.io']
 
 theme_dir: '_theme/material'
 docs_dir: './unattended-server/docs'
