@@ -2,6 +2,7 @@ site_name: Project Limitless
 site_description: 'Project documentation'
 site_author: 'Donovan Solms'
 site_url: 'https://docs.projectlimitless.io/project-limitless'
+project_url: '/project-limitless'
 
 # Repository
 repo_name: 'GitHub'
@@ -10,8 +11,8 @@ repo_url: 'https://github.com/ProjectLimitless/ProjectLimitless'
 # Copyright
 copyright: 'Copyright &copy; Donovan Solms'
 
-theme_dir: '../_theme/material'
-theme: 'material'
+theme_dir: '_theme/material'
+docs_dir: './badger/docs'
 extra:
   logo: images/limitless-logo.png
   author:
