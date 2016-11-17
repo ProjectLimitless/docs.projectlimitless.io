@@ -12,7 +12,7 @@ repo_url: 'https://github.com/ProjectLimitless/UnattendedServer'
 copyright: 'Copyright &copy; Donovan Solms'
 
 theme_dir: '_theme/material'
-docs_dir: './badger/docs'
+docs_dir: './unattended-server/docs'
 extra:
   logo: images/limitless-logo.png
   author:
