@@ -5,6 +5,9 @@
 Project Limitless is a platform for naturally controlling all the technology
 around you.
 
+**This project is under active development. The documentation will be expanded
+as more work completes**
+
 ## About the Documentation
 
 This is part of the open source Project Limitless documentation covering
