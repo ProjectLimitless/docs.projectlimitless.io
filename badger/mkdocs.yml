@@ -1,7 +1,8 @@
 site_name: Badger
 site_description: 'Project documentation'
 site_author: 'Donovan Solms'
-site_url: 'https://docs.projectlimitless.io/Badger'
+site_url: 'https://docs.projectlimitless.io/badger'
+project_url: '/badger'
 
 # Repository
 repo_name: 'GitHub'
@@ -10,7 +11,8 @@ repo_url: 'https://github.com/ProjectLimitless/Badger'
 # Copyright
 copyright: 'Copyright &copy; Donovan Solms'
 
-theme_dir: '../_theme/material'
+theme_dir: '_theme/material'
+docs_dir: './badger/docs'
 theme: 'material'
 extra:
   logo: images/limitless-logo.png
