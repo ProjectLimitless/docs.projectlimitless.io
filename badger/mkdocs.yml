@@ -13,7 +13,7 @@ copyright: 'Copyright &copy; Donovan Solms'
 
 theme_dir: '_theme/material'
 docs_dir: './badger/docs'
-theme: 'material'
+#theme: 'material'
 extra:
   logo: images/limitless-logo.png
   author:
