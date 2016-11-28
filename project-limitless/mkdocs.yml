@@ -14,6 +14,8 @@ google_analytics: ['UA-26768009-4', 'docs.projectlimitless.io']
 
 theme_dir: '_theme/material'
 docs_dir: './project-limitless/docs'
+#theme_dir: '../_theme/material'
+#docs_dir: './docs'
 extra:
   logo: images/limitless-logo.png
   author:
@@ -29,3 +31,5 @@ markdown_extensions:
 # Page tree
 pages:
   - Overview: index.md
+  - Configuration: configuration.md
+  - Modules: modules.md
